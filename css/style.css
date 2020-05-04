@@ -15,7 +15,7 @@ body {
     letter-spacing: 2px;
 }
 
-#aboutMe p {
+#aboutMe a {
     font-family: 'Aleo', sans-serif;
     color: #01989E;
     font-size: medium;
@@ -157,6 +157,8 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-family: 'Aleo', sans-serif;
+    color: #01989E;
   }
 
 .dropdown-content a:hover, a:focus {
