@@ -1,0 +1,253 @@
+body {
+    background-color: #EAE5DF;
+}
+#aboutMe h1 {
+    font-family: 'Shrikhand', cursive, serif;
+    color: #01989E;
+    font-size: 250%;
+    letter-spacing: 2px;
+}
+
+#aboutMe h3 {
+    font-family: 'Shrikhand', cursive, serif;
+    color: #01989E;
+    font-size: 160%;
+    letter-spacing: 2px;
+}
+
+#aboutMe p {
+    font-family: 'Aleo', sans-serif;
+    color: #01989E;
+    font-size: medium;
+    margin-top: -3%;
+    line-height: 150%;
+}
+
+#navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+  }
+  #navigation {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #navigation p {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .navItem {
+    font-family: 'Shrikhand', cursive, serif;
+    color: #E73D2C;
+    padding-right: 35px;
+  }
+  .navItem:hover {
+    color: #01989E;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin-left: -3%;
+  }
+  .logo img {
+    margin: 15px;
+    max-width: 100px;
+    cursor: pointer;
+  }
+ .icons {
+     padding: 20px;
+
+ }
+
+ #heroGrid {
+     display: grid;
+     grid-template-columns: 65% 35%;
+     grid-template-rows: 25% 25% 25% 25%;
+     grid-column-gap: 10px;
+     /* overflow: hidden; */
+     max-height: 705px;
+     margin: 10%;
+     margin-top: 0%;
+ }
+
+ #helloWorldBox {
+     grid-row-start: 1;
+     grid-row-end: span 2;
+     grid-column-start: 1;
+     grid-column-end: auto;
+     background-color: #F6C8C9;
+     padding: 4%;
+     margin-right: 4%;
+     border: 5px solid #01989E;
+     box-shadow: -3px -3px 2px #E73D2C;
+     animation: shadow 5s infinite;
+}
+      
+    @keyframes shadow {
+        50% {box-shadow: -3px -3px 2px rgb(240, 153, 145);}
+      }
+
+ #helloWorldBox h1 {
+     text-align: center;
+     font-family: 'Shrikhand', cursive, serif;
+    color: #01989E;
+    font-size: 250%;
+    letter-spacing: 2px;
+     
+ }
+ 
+ #helloWorldBox h3 {
+     text-align: center;
+     align-content: start;
+     font-family: 'Shrikhand', cursive, serif;
+    color: #01989E;
+    font-size: 160%;
+    letter-spacing: 2px;
+ }
+
+ #aboutMe {
+     grid-row-start: auto;
+     grid-column-start: 1;
+     grid-column-end: auto;
+     padding-right: 10%;
+ }
+
+ .dropbtn {
+    display: flex;
+    margin: auto;
+    font-family: 'Aleo', sans-serif;
+    color: #01989E;
+    font-size: large;
+    height: 50px;
+}
+.dropbtn:hover {
+    color: #EAE5DF;
+    background-color: #01989E;
+}
+
+.link {
+    display: none;
+}
+
+
+.dropdown {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: inherit;
+    margin: 0 auto;
+    width: 140px;
+    background-color: #f1f1f1;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover, a:focus {
+    background-color: #01989E;
+    color: #EAE5DF;
+}  
+
+.show {display:block;}
+ 
+ #kristinPic {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 2;
+    grid-column-end: auto;
+    max-height: 70%;
+    width: 90%;
+    padding: 5px;
+    background-color: #01989E;
+    box-shadow: 3px 3px 2px #E73D2C;
+    animation: shadow 5s infinite;
+}
+     
+     @keyframes shadow {
+       50% {box-shadow: -3px -3px 2px rgb(240, 153, 145);}
+     }
+
+ #letsGetSocial {
+     grid-row-start: auto;
+     grid-row-end: auto;
+     grid-column-start: 2;
+     grid-column-end: auto;
+     margin-right: 10%;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-rows: auto auto;
+     grid-template-areas: 
+     "social social social social"
+     "fb ig be lki";
+     align-items: end;
+ }
+#social {
+    grid-area: social;
+    font-family: 'Shrikhand', cursive, serif;
+    color: #E73D2C;
+    font-size: x-large;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+svg {
+    width: 45px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+ #fb {
+     grid-area: fb;
+ }
+
+ #fb:hover {
+    grid-area: fb;
+    fill: #E73D2C;
+
+}
+
+ #ig {
+     grid-area: ig;
+ }
+ 
+ #ig:hover {
+    grid-area: ig;
+    fill: #E73D2C;
+}
+
+ #be {
+     grid-area: be;
+ }
+ 
+ #be:hover {
+    grid-area: be;
+    fill: #E73D2C;
+}
+
+ #lki {
+     grid-area: lki;
+ }
+
+#lki:hover {
+    grid-area: lki;
+    fill: #E73D2C;
+}
+ 
