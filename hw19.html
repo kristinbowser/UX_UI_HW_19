@@ -17,13 +17,15 @@
     <nav id="navBar">
         <div class="logo">
             <img src="images/logo.png">
+            <div class="shadow"></div>
         </div>
         <div id="navigation" class="nav">
-            <a href="#" class="navItem">About Me</a>
-            <a href="#" class="navItem">My UX Toolkit</a>
-            <a href="#" class="navItem">Case Study #1</a>
-            <a href="#" class="navItem">Case Study #2</a>
-            <a href="#" class="navItem">Case Study #3</a>
+            <a href="#helloWorldBox" class="navItem">About Me</a>
+            <a href="#aboutMe" class="navItem">My UX Toolkit</a>
+            <a href="#caseStudy1" class="navItem">Case Study #1</a>
+            <a href="#caseStudy2" class="navItem">Case Study #2</a>
+            <a href="#caseStudy3" class="navItem">Case Study #3</a>
+            <a href="#emailForm" class="navItem">Contact</a>
         </div>
     </nav>
 
@@ -112,7 +114,7 @@
             </div>
         </div>
     </section>
-    <section class="mySkills">
+    <section id="tool" class="mySkills">
         <h1 id="myUxTools">My UX Toolkit</h1>
         <div class="skillsGrid">
             <img id="mySkillsPic" src="images/My Skills.png">
@@ -155,7 +157,7 @@
                     GetGreen<br>
                     Mobile App
                 </h2>
-                <p>My team and I were tasked with designing a mobile app that would make the world a better place. We chose environemtal sustainability and created GetGreen.</p>
+                <p class="description">My team and I were tasked with designing a mobile app that would make the world a better place. We chose environemtal sustainability and created GetGreen.</p>
                 <button class="viewProject" href=#>View Project</button>
             </div>
             <div>
@@ -175,20 +177,36 @@
                 <button class="viewProject" href=#>View Project</button>
             </div>
         </div>
-
-
     </section>
 
-    <!-- <section id="skillsArea">
-        <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div id="emailForm" class="container">
+        <div class=contactMe>
+          <h2>Contact Me</h2>
+          <p>Say hello! Feel free to send me a message:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img id="helloPic" src="Images/contact.jpg">
           </div>
-    </section> -->
-
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name...">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something..." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+            <h4>© 2020 | Coded with love by Kristin Bowser</h4>
+          </div>
+        </div>
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
