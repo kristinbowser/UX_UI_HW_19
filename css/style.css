@@ -749,29 +749,32 @@ ul {
         margin-left: 5px;
         margin-right: 5px;
         margin-bottom: 10px;
-        text-align: left;
+        /* text-align: left; */
         max-height: 500px;
         max-width: 400px;
         padding-bottom: 10px;
-        text-align: center;
+        /* text-align: center; */
     }
 
     #van {
         max-height: 155px;
-        grid-area: "van";
+
         margin-left: 5px;
         margin-top: 10px;
         box-shadow: .4px .4px 1px #e73d2c;
     }
 
-    #case3 {
-        grid-area: "case3";
-        padding-top: 1px;
+    #case3 h2 {
         margin-left: 0px;
+        margin-top: -10px;
         font-family: 'Shrikhand', cursive, serif;
-        font-size: 8pt;
+        font-size: 3pt;
         letter-spacing: 1px;
         color: #01989E;
+    }
+
+    #case3 h3 {
+        font-size: 1pt;
     }
 
     .viewProject {
@@ -787,6 +790,10 @@ ul {
         border-radius: 2px;
         margin-left: 5px;
     }
+}
+
+.description {
+    margin: 25px 50px;
 }
 
 * {
