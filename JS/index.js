@@ -33,5 +33,7 @@ function stickNav() {
     $("#navigation").css("margin-top", "1%");
   } else {
     navbar.classList.remove("sticky");
+    $(".logo img").css("max-width", "100px");
+    $("#navigation").css("margin-top", "3.5%");
   }
 }
