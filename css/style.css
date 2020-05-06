@@ -616,16 +616,14 @@ ul {
         letter-spacing: 1px;
         color: #01989E;
     }
-
-    #caseStudy3 {
-        /* display: flex;
-        flex-direction: column; */
+/*Commented out until project 3*/
+    /* #caseStudy3 {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
         "van"
-        "case3";
+        "cases3";
         grid-gap: 0px;
         background-color: #F6C8C9;
         margin-left: 5px;
@@ -643,23 +641,16 @@ ul {
         margin-left: 5px;
         margin-top: 10px;
         box-shadow: .4px .4px 1px #e73d2c;
-    }
-
-    #case3 {
-      grid-area: "case3";
-        margin-left: 0px;
-        margin-top: -10px;
-        font-family: 'Shrikhand', cursive, serif;
-        font-size: 3pt;
-        letter-spacing: 2px;
-        color: #01989E;
-    }
-
-    /* h6 {
-      font-size: medium;
+    } */
+/* 
+    #cases3 {
+      grid-area: "cases3";
+      padding-top: 1px;
+      margin-left: 5px;
       font-family: 'Shrikhand', cursive, serif;
-      color: #01989E;
+      font-size: 8pt;
       letter-spacing: 1px;
+      color: #01989E;
     } */
 
     .viewProject {
@@ -679,6 +670,7 @@ ul {
 
 .description {
     margin:0px 20px 10px 20px;
+    font-size: medium;
 }
 
 .caseStudyImg {
