@@ -357,27 +357,32 @@ ul {
     grid-template-rows: 1fr;
     grid-template-areas:
     "kitten" "case1";
-    grid-gap: 30px;
+    column-gap: 30px;
     background-color: #F6C8C9;
     margin-left: 150px;
     margin-right: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     text-align: center;
     border-radius: 3px;
 }
 
 #kitten {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
     max-height: 300px;
     grid-area: "kitten";
-    margin-left: 70px;
-    margin-top: 30px;
     box-shadow: 1px 1px 5px #e73d2c;
     border-radius: 3px;
 }
 
 #case1 {
+  padding-top: 20px;
+    padding-bottom: 20px;
     grid-area: "case1";
-    padding-top: 75px;
     justify-self: center;
     font-family: 'Shrikhand', cursive, serif;
     font-size: 16pt;
@@ -390,18 +395,19 @@ ul {
     grid-template-columns: 2fr 3fr;
     grid-template-areas:
     "case2" "coffee";
-    grid-gap: 30px;
+    column-gap: 30px;
     background-color: #F6C8C9;
     margin-left: 150px;
     margin-right: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     text-align: center;
     border-radius: 3px;
 }
 
 #case2 {
+  padding-top: 20px;
+    padding-bottom: 20px;
     grid-area: "case2";
-    padding-top: 75px;
     text-align: center;
     font-family: 'Shrikhand', cursive, serif;
     font-size: 16pt;
@@ -410,6 +416,12 @@ ul {
 }
 
 #coffee {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
     max-height: 300px;
     grid-area: "coffee";
     margin-right: 70px;
@@ -424,7 +436,7 @@ ul {
     grid-template-rows: 1fr;
     grid-template-areas:
     "van" "case3";
-    grid-gap: 30px;
+    column-gap: 30px;
     background-color: #F6C8C9;
     margin-left: 150px;
     margin-right: 150px;
@@ -434,17 +446,22 @@ ul {
 }
 
 #van {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
     max-height: 300px;
     grid-area: "van";
-    margin-left: 70px;
-    margin-top: 30px;
     box-shadow: 1px 1px 5px #e73d2c;
     border-radius: 3px;
 }
 
 #case3 {
     grid-area: "case3";
-    padding-top: 75px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     font-family: 'Shrikhand', cursive, serif;
     font-size: 16pt;
@@ -584,10 +601,8 @@ ul {
     }
 
     #coffee {
-        max-height: 155px;
-        grid-area: "coffee";
-        overflow: hidden;
-        margin-left: 5px;
+        max-height: 95%;
+        margin-right: -5px;
         margin-top: 10px;
         box-shadow: .4px .4px 1px #e73d2c;
     }
@@ -603,46 +618,49 @@ ul {
     }
 
     #caseStudy3 {
-        display: flex;
-        flex-direction: column;
-        /* display: grid;
+        /* display: flex;
+        flex-direction: column; */
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
-        "coffee"
-        "case2";
-        grid-gap: 0px; */
+        "van"
+        "case3";
+        grid-gap: 0px;
         background-color: #F6C8C9;
         margin-left: 5px;
         margin-right: 5px;
         margin-bottom: 10px;
-        /* text-align: left; */
+        text-align: left;
         max-height: 500px;
         max-width: 400px;
         padding-bottom: 10px;
-        /* text-align: center; */
+        text-align: center;
     }
 
     #van {
         max-height: 155px;
-
         margin-left: 5px;
         margin-top: 10px;
         box-shadow: .4px .4px 1px #e73d2c;
     }
 
-    #case3 h2 {
+    #case3 {
+      grid-area: "case3";
         margin-left: 0px;
         margin-top: -10px;
         font-family: 'Shrikhand', cursive, serif;
         font-size: 3pt;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         color: #01989E;
     }
 
-    #case3 h3 {
-        font-size: 1pt;
-    }
+    /* h6 {
+      font-size: medium;
+      font-family: 'Shrikhand', cursive, serif;
+      color: #01989E;
+      letter-spacing: 1px;
+    } */
 
     .viewProject {
         background-color: #EAE5DF;
@@ -660,7 +678,13 @@ ul {
 }
 
 .description {
-    margin: 25px 50px;
+    margin:0px 20px 10px 20px;
+}
+
+.caseStudyImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 * {
