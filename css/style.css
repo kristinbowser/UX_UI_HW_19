@@ -616,42 +616,7 @@ ul {
         letter-spacing: 1px;
         color: #01989E;
     }
-/*Commented out until project 3*/
-    /* #caseStudy3 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "van"
-        "cases3";
-        grid-gap: 0px;
-        background-color: #F6C8C9;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-bottom: 10px;
-        text-align: left;
-        max-height: 500px;
-        max-width: 400px;
-        padding-bottom: 10px;
-        text-align: center;
-    }
 
-    #van {
-        max-height: 155px;
-        margin-left: 5px;
-        margin-top: 10px;
-        box-shadow: .4px .4px 1px #e73d2c;
-    } */
-/* 
-    #cases3 {
-      grid-area: "cases3";
-      padding-top: 1px;
-      margin-left: 5px;
-      font-family: 'Shrikhand', cursive, serif;
-      font-size: 8pt;
-      letter-spacing: 1px;
-      color: #01989E;
-    } */
 
     .viewProject {
         background-color: #EAE5DF;
