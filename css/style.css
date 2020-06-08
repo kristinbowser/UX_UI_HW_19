@@ -552,7 +552,7 @@ ul {
         text-align: left;
     }
 
-    #caseStudy1 {
+    /* #caseStudy1 {
         display: flex;
         flex-direction: column;
         background-color: #F6C8C9;
@@ -566,8 +566,8 @@ ul {
         text-align: center;
         border: 7px solid #01989E;
         box-shadow: -8px -8px 7px #E73D2C;
-        animation: shadow 4s infinite;
-    }
+        animation: shadow 4s infinite; */
+    /* }
 
     #kitten {
         max-width: 95%;
@@ -615,8 +615,22 @@ ul {
         font-size: 8pt;
         letter-spacing: 1px;
         color: #01989E;
+    } */
+
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
     }
 
+    /* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 
     .viewProject {
         background-color: #EAE5DF;
@@ -631,7 +645,6 @@ ul {
         border-radius: 2px;
         margin-left: 5px;
     }
-}
 
 .description {
     margin:0px 20px 10px 20px;
